@@ -1,178 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bala Films Studio</title>
-
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, sans-serif;
-}
-
-body{
-    background:#111;
-    color:white;
-}
-
-header{
-    background:#000;
-    padding:20px 10%;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-}
-
-.logo{
-    font-size:28px;
-    font-weight:bold;
-    color:#f5c542;
-}
-
-nav a{
-    color:white;
-    text-decoration:none;
-    margin-left:20px;
-}
-
-.hero{
-    height:90vh;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    background:linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)),
-    url('https://images.unsplash.com/photo-1485846234645-a62644f84728');
-    background-size:cover;
-    background-position:center;
-}
-
-.hero h1{
-    font-size:60px;
-    margin-bottom:15px;
-}
-
-.hero p{
-    font-size:20px;
-    max-width:700px;
-}
-
-.btn{
-    margin-top:25px;
-    padding:12px 25px;
-    background:#f5c542;
-    color:black;
-    text-decoration:none;
-    border-radius:5px;
-    font-weight:bold;
-}
-
-section{
-    padding:80px 10%;
-}
-
-.section-title{
-    text-align:center;
-    margin-bottom:40px;
-    font-size:35px;
-}
-
-.services{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:20px;
-}
-
-.card{
-    background:#1b1b1b;
-    padding:25px;
-    border-radius:10px;
-}
-
-.card h3{
-    color:#f5c542;
-    margin-bottom:10px;
-}
-
-footer{
-    background:#000;
-    text-align:center;
-    padding:20px;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Studio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<header>
-    <div class="logo">BALA FILMS</div>
+    <header>
+        <nav>
+            <div class="logo">STUDIO</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <nav>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
-    </nav>
-</header>
-
-<section class="hero">
-    <h1>Bala Films Studio</h1>
-    <p>
-        Professional Film Production, Photography,
-        Cinematography and Creative Media Solutions.
-    </p>
-
-    <a href="#contact" class="btn">Contact Us</a>
-</section>
-
-<section id="about">
-    <h2 class="section-title">About Us</h2>
-
-    <p style="text-align:center; max-width:800px; margin:auto;">
-        Bala Films Studio is dedicated to creating cinematic experiences,
-        professional photography and high-quality visual storytelling.
-        We bring creativity, passion and innovation to every project.
-    </p>
-</section>
-
-<section id="services">
-    <h2 class="section-title">Our Services</h2>
-
-    <div class="services">
-
-        <div class="card">
-            <h3>Film Production</h3>
-            <p>Complete movie and short film production services.</p>
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Creative Design Studio</h1>
+            <p>We create modern and beautiful digital experiences.</p>
+            <a href="#portfolio" class="btn">View Work</a>
         </div>
+    </section>
 
-        <div class="card">
-            <h3>Photography</h3>
-            <p>Professional event and commercial photography.</p>
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Web Design</h3>
+                <p>Modern and responsive website design.</p>
+            </div>
+
+            <div class="card">
+                <h3>Photography</h3>
+                <p>Professional photography services.</p>
+            </div>
+
+            <div class="card">
+                <h3>Branding</h3>
+                <p>Build a strong identity for your business.</p>
+            </div>
         </div>
+    </section>
 
-        <div class="card">
-            <h3>Video Editing</h3>
-            <p>Creative editing and post-production solutions.</p>
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="gallery">
+            <img src="https://picsum.photos/400/300?1">
+            <img src="https://picsum.photos/400/300?2">
+            <img src="https://picsum.photos/400/300?3">
+            <img src="https://picsum.photos/400/300?4">
         </div>
+    </section>
 
-    </div>
-</section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <textarea placeholder="Your Message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
 
-<section id="contact">
-    <h2 class="section-title">Contact Us</h2>
-
-    <div style="text-align:center;">
-        <p>Email: contact@balafilms.in</p>
-        <p>Phone: +91 XXXXX XXXXX</p>
-    </div>
-</section>
-
-<footer>
-    © 2026 Bala Films Studio | All Rights Reserved
-</footer>
+    <script src="script.js"></script>
 
 </body>
 </html>
